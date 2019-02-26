@@ -43,7 +43,7 @@ mice_multilevel_imputation_draw_random_effects <- function( mu, Sigma,ridge=1E-2
 
 
 # censored bivariate probit model with random intercept using GHQ:
-mice.impute.2l.heckman1step_re_ghq <- function(y, ry, x, type, QP=rep(10,2),draw=T,excl="",...) { 
+mice.impute.2l.heckman1step_re_ghq <- function(y, ry, x, type, QP=rep(10,2), draw=T, excl="",...) { 
 
   nam <- colnames(x) 
   
