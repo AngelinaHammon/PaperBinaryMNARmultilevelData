@@ -1,5 +1,5 @@
 # PaperBinaryMNARmultilevelData
-This material belongs to the paper draft "Multiple Imputation of Non-ignorable Missing Multilevel Data Using a Censored Bivariate Probit Model" by A. Hammon and S. Zinn
+This material belongs to the paper draft "Multiple Imputation of Binary Multilevel Missing Not at Random Data" by A. Hammon and S. Zinn
 
 It contains the R functions for multiply imputing binary missing data under assuming MNAR that can be incorporated in Stef van Buuren's mice function as well as the package source of the package "bivprob.quad" that is required for estimating the censored bivariate probit models with random intercepts. In addition, we provide the R code of our application to empirical data and an extract of our simulation study
 
