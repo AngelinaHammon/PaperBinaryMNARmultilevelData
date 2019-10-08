@@ -1,6 +1,18 @@
-############################################################
-##### Simulation MNAR selection model bivariate probit #####
-############################################################
+#########################################################################################
+#########################################################################################
+##
+## Simulation study for evaluating the bivariate probit model with sample selection
+## and random intercept
+##
+## Consideration of different missing-data mechanisms: 
+## -> MAR, MNAR selection model, MNAR non-selection model
+##
+## @author Angelina Hammon
+##
+## 05.09.2019
+##
+#########################################################################################
+#########################################################################################
 
 
 # install package for model calculation: 
