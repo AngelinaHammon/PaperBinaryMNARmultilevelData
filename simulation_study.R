@@ -56,7 +56,6 @@ for(i in 1:100000) {
   alpha_o <- rep(alpha[,2], each=nj)  
   
   y <- 0.25+1*x1+0.5*x2+eps_o+alpha_o
-  #y <- -0.25+1.5*x1+1.75*x2+eps_o
   y <- ifelse(y<0,0,1)
   
   r <- 0.5+1.5*x1-0.25*x2+0.1*x3+eps_s+alpha_s
@@ -67,10 +66,8 @@ for(i in 1:100000) {
   data <- data.frame(y,r,x1,x2,x3,group)
   
   model <- glmer(y~x1+x2+(1|group),data=data,family=binomial("probit"),nAGQ=5)
-  #model <- glm(y~x1+x2,data=data,family=binomial("probit"))
   
   model_bd <- model_bd + c(model@beta,model@theta^2)
-  #prob <- prob+mean(data$y)
   
 }
 
